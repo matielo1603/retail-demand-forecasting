@@ -1,68 +1,113 @@
-# 📊 Retail Demand Forecasting with Prophet
+📊 Retail Demand Forecasting with Prophet
 
-Time series forecasting project to predict retail product demand using Facebook Prophet.
+End-to-end time series forecasting project focused on predicting retail product demand using Facebook Prophet, with emphasis on seasonality analysis and business impact.
 
-## 🎯 Project Overview
+🎯 Project Objective
 
-Predictive model to forecast retail demand, helping optimize inventory management and reduce stockouts.
+Forecast future retail demand to support inventory planning, promotion strategy analysis, and stockout reduction, using historical sales data and temporal patterns.
 
-**Dataset:** [Retail Demand Forecasting Dataset](https://www.kaggle.com/datasets/rishavdash/retail-demand-forecasting-dataset)
+The project explores how seasonality and promotional events influence demand behavior and evaluates Prophet’s suitability for retail forecasting scenarios.
 
-## 🛠️ Tech Stack
+Dataset:
+Retail Demand Forecasting Dataset (Kaggle)
+https://www.kaggle.com/datasets/rishavdash/retail-demand-forecasting-dataset
 
-- Python 3.8+
-- Pandas, NumPy, Prophet, Scikit-learn
-- Matplotlib, Seaborn
-- Google Colab / Jupyter Notebook
+🧠 Business Context
 
-## 📊 Methodology
+Retail demand is highly seasonal and sensitive to promotions. Poor forecasts lead to:
 
-1. Data acquisition via Kaggle API
-2. Exploratory Data Analysis (EDA)
-3. Automatic feature detection (date, target, regressors)
-4. Prophet model with seasonality + external regressors
-5. Evaluation with RMSE and MAPE
-6. Forecast visualization and seasonal decomposition
+Overstocking
 
-## 📈 Key Results
+Stockouts
 
-- Strong weekly and yearly seasonality patterns identified
-- Promotions significantly impact demand spikes
-- Model successfully captures seasonal trends
+Revenue loss
 
-## 🚀 How to Run
+This project demonstrates how time series models can be applied to generate actionable demand forecasts aligned with real business decisions.
 
-### Prerequisites
-```bash
+🛠️ Tech Stack
+
+Python 3.8+
+
+Data Processing: Pandas, NumPy
+
+Modeling: Prophet, Scikit-learn
+
+Visualization: Matplotlib, Seaborn
+
+Environment: Jupyter Notebook / Google Colab
+
+📊 Methodology
+
+Dataset ingestion and preprocessing
+
+Exploratory Data Analysis (trend, seasonality, anomalies)
+
+Time series structuring for Prophet (ds, y)
+
+Modeling with:
+
+Weekly and yearly seasonality
+
+Holiday / promotion effects
+
+Model evaluation using:
+
+RMSE
+
+MAPE
+
+Forecast visualization and interpretation of results
+
+📈 Key Insights
+
+Strong weekly and yearly seasonality patterns detected
+
+Promotional periods generate clear demand spikes
+
+Prophet effectively captures long-term trends and seasonal behavior
+
+Model suitable for short- to medium-term retail demand forecasting
+
+🚀 How to Run the Project
+
 pip install -r requirements.txt
-```
 
-### Execution
-1. Clone this repository
-2. Download dataset from Kaggle
-3. Run notebooks in order:
-   - `01_exploratory_data_analysis.ipynb`
-   - `02_demand_forecasting_model.ipynb`
+Execution Steps
 
-## 📁 Project Structure
-```
-├── notebooks/          # Analysis and modeling notebooks
-├── images/            # Visualizations
-├── data/              # Dataset (not tracked in git)
-└── requirements.txt   # Python dependencies
-```
+Clone the repository
 
-## 🔍 Future Improvements
+Download the dataset from Kaggle
 
-- [ ] Compare with ARIMA and LSTM
-- [ ] Hyperparameter tuning
-- [ ] Deploy as REST API
-- [ ] Create interactive dashboard
+Place the dataset inside the data/ directory
 
-## 📝 License
+Run the notebook
+
+📁 Project Structure
+
+├── notebooks/           # EDA and modeling notebooks
+├── images/              # Generated visualizations
+├── data/                # Dataset (ignored by git)
+├── requirements.txt     # Project dependencies
+└── README.md
+
+🔍 Future Improvements
+
+ - Benchmark against ARIMA and SARIMA
+
+ - Implement LSTM / deep learning models
+
+ - Hyperparameter optimization
+
+ - Deploy model as REST API
+
+ - Build interactive dashboard (Streamlit / Power BI)
+
+📝 License
 
 MIT License
 
-## 👤 Author
+👤 Author
 
-[Matheus Matielo] - [LinkedIn](https://www.linkedin.com/in/matheus-matielo-673321271/)
+Matheus Matielo
+Data & Analytics Enthusiast
+https://www.linkedin.com/in/matheus-matielo-673321271/
