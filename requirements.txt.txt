@@ -1,0 +1,73 @@
+pandas>=1.5.0
+numpy>=1.23.0
+prophet>=1.1.5
+scikit-learn>=1.2.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+kaggle>=1.5.12
+jupyter>=1.0.0
+```
+
+3. Salve como: `requirements.txt`
+
+---
+
+#### **6.3 - Criar `.gitignore`**
+
+1. Novo arquivo de texto
+2. Cole este conteúdo:
+```
+# Data files
+data/*.csv
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Environment
+venv/
+env/
+.env
+
+# Kaggle credentials
+kaggle.json
+.kaggle/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+```
+
+3. Salve como: `.gitignore`
+   - **IMPORTANTE:** O ponto no início é obrigatório!
+
+---
+
+#### **6.4 - Colocar seu notebook na pasta correta**
+
+1. Pegue seu arquivo `projeto_ciencia_de_dados.ipynb`
+2. **Copie** para a pasta `notebooks/`
+3. **Renomeie** para: `02_demand_forecasting_model.ipynb`
+
+---
+
+### **PASSO 7: Verificar a estrutura final**
+
+Sua pasta deve estar assim:
+```
+retail-demand-forecasting/
+├── notebooks/
+│   └── 02_demand_forecasting_model.ipynb
+├── images/
+├── data/
+├── src/
+├── README.md
+├── requirements.txt
+└── .gitignore
